@@ -53,13 +53,27 @@ git commit -m "อัปเดตโปรเจค"
 
 git push origin main
 
+-------  Build  ---------
+flutter build apk
+
+
+   เปลี่ยนโลโก้ //flutter pub run flutter_launcher_icons
+          flutter_launcher_icons: ^0.13.1
+  
+          flutter_icons:
+            image_path: "assets/images/logo/vendorlogo.png"
+            android: true
+            ios: true
+
+flutter pub run flutter_launcher_icons:main
+
 -------- SDK FLUTTER ---------
 dart --version เพื่อตรวจสอบเวอร์ชันปัจจุบันและตามด้วยการอัปเดต Dart SDK 
          //โดยใช้คำสั่ง dart pub upgrade หรือ dart pub upgrade --major-versions
 
     //update Dart Version https://dart.dev/get-dart
 
-
+---------------------------
   cupertino_icons: ^1.0.2
   firebase_core: ^2.15.1
   cloud_firestore: ^4.9.1
